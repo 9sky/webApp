@@ -1,0 +1,90 @@
+<ion-view  hide-nav-bar="true">
+    <!-- 标题栏 -->
+    <ion-header-bar class="item item-input-inset">
+        <button class="button button-icon ion-android-expand"></button>
+        <div class="item-input-wrapper">
+            <i class="icon ion-search placeholder-icon"></i>
+            <input type="search" placeholder="请输入搜索关键字"/>
+        </div>
+        <button class="button button-icon ion-chatbox-working" ui-sref="login"></button>
+    </ion-header-bar>
+
+    <!-- 内容区 -->
+    <ion-content >
+        <ion-slide-box auto-play="true" does-continue="true" slide-interval="2500" show-pager="true" pager-click="true">
+            <ion-slide>
+                <a class="box" ui-sref="tabs.trouble"><img src="images/IMG_0535_02.jpg"></a>
+            </ion-slide>
+            <ion-slide>
+                <a class="box" ui-sref="tabs.quick"><img src="images/IMG_0491_02.jpg"></a>
+            </ion-slide>
+
+            <ion-slide>
+                <a class="box" ui-sref="tabs.quick"><img src="images/IMG_0492_02.jpg"></a>
+            </ion-slide>
+        </ion-slide-box>
+        <div class="row" style="text-align: center;font-size: 1.5em">
+            <div class="col">
+                <a ui-sref="#">
+                    <img src="images/IMG_01.jpg"><br><br>
+                </a>
+                <p>药e到</p>
+            </div>
+            <div class="col">
+                <a ui-sref="#">
+                    <img src="images/IMG_02.jpg"><br><br>
+                </a>
+                <p>用药咨询</p>
+            </div>
+            <div class="col">
+                <a ui-sref="#">
+                    <img src="images/IMG_03.jpg"><br><br>
+                </a>
+                <p>疾病自诊</p>
+            </div>
+            <div class="col">
+                <a ui-sref="#">
+                    <img src="images/IMG_04.jpg"><br><br>
+                </a>
+                <p>化验指标</p>
+            </div>
+
+        </div>
+        <div class="interval" style="height: 10px;background: #f3f3f3"></div>
+        <div class="nearby" style="height:50px;line-height:50px;padding: 0 2%;border-bottom: 2px solid #ebebeb">
+            <p>附近药店<span style="float:right">更多></span></p>
+        </div>
+        <div class="list">
+            <div class="item-avatar-left">
+                <img src="images/IMG_near.jpg">
+                <h5>华夏连锁静居寺</h5>
+                <p>334米</p>
+            </div>
+        </div>
+        <div class="interval" style="height: 10px;background: #f3f3f3"></div>
+        <div class="list">
+            <div class="item">健康资讯</div>
+            <a class="item item-avatar-left" ui-sref="tabs.eczema">
+                <img src="images/IMG_near.jpg">
+                <h3>宝宝湿疹怎么办</h3>
+                <p>母婴</p>
+            </a>
+            <a class="item item-avatar-left" ui-sref="tabs.eye">
+                <img src="images/IMG_near.jpg">
+                <h3>秋风起，眼睛痒痒怎么办？</h3>
+                <p>生活</p>
+            </a>
+            <a class="item item-avatar-left" ui-sref="tabs.nose">
+                <img src="images/IMG_near.jpg">
+                <h3>PM2.5对鼻子有什么影响？</h3>
+                <p>生活 耳鼻喉</p>
+            </a>
+            <a class="item item-avatar-left" ui-sref="tabs.fridge">
+                <img src="images/IMG_near.jpg">
+                <h3>这些年，你的冰箱可能都用错了！</h3>
+                <p>生活 真相</p>
+            </a>
+        </div>
+    </ion-content>
+
+</ion-view>

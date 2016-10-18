@@ -1,0 +1,57 @@
+<ion-view view-title="登录">
+    <ion-nav-buttons side="left">
+        <button class="button button-clear ion-ios-close-empty" style="font-size: 2em" ng-click="go()"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <button class="button button-clear" ui-sref="tabs.fast">立即注册</button>
+    </ion-nav-buttons>
+
+        <ion-tabs class="tabs-top tabs-striped">
+            <ion-tab title="手机号快捷登录">
+                <ion-content id="login_phone">
+                    <div class="list">
+                        <div class="item item-input-inset">
+                            <div class="item-input-wrapper">
+                                <i class="icon ion-iphone placeholder-icon"></i>
+                                <input type="text" placeholder="请输入账号">
+                            </div>
+                        </div>
+                        <div class="item item-input-inset">
+                            <div class="item-input-wrapper">
+                                <i class="icon ion-ios-unlocked-outline placeholder-icon"></i>
+                                <input type="text" placeholder="请输入验证码">
+                                <button class="button button-small button-assertive" style="height: 30px">获取验证码</button>
+                            </div>
+                        </div>
+                    </div>
+                    <p>未注册的手机号将自动创建账户</p>
+                    <button class="button button-block button-balanced">登录</button>
+
+                </ion-content>
+0.
+            </ion-tab>
+            <ion-tab title="账号密码登录">
+                <ion-content id="password">
+                    <div class="list">
+                        <div class="item item-input-inset">
+                            <div class="item-input-wrapper">
+                                <i class="icon ion-iphone placeholder-icon"></i>
+                                <input type="text" placeholder="请输入账号">
+                            </div>
+                        </div>
+                        <div class="item item-input-inset">
+                            <div class="item-input-wrapper">
+                                <i class="icon ion-android-checkbox-outline placeholder-icon"></i>
+                                <input type="password" placeholder="请输入密码">
+                            </div>
+                        </div>
+                    </div>
+                    <p>忘记密码？点这里重置密码</p>
+                    <button class="button button-block button-balanced">登录</button>
+                </ion-content>
+
+            </ion-tab>
+        </ion-tabs>
+
+
+</ion-view>

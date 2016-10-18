@@ -1,0 +1,19 @@
+a{text-decoration: none}
+#fast{margin: 0 5%}
+#fast input{width: 75%}
+
+#phone{top: 92px;margin: 0 5%}
+#phone input{width: 75%}
+
+#login_phone{top: 92px;text-align: center}
+#login_phone input{width: 75%}
+
+#password{top: 92px;text-align: center}
+#password input{width: 75%}
+
+.box img{width: 100%;height: 100%;display: block}
+.row .col img{width: 23vw;height: 23vw}
+.page{width: 100vw;height: 100vh;overflow: hidden;position: absolute;top: 0;left: 0}
+.page .previous{transform: translate(0,100%)}
+.page .next{transform: translate(0,-100%)}
+.active .previous, .active .next{transition: all 2s}
